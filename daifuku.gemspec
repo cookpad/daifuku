@@ -11,7 +11,10 @@ Gem::Specification.new do |spec|
     spec.email         = ["giginet.net@gmail.com"]
 
     spec.summary       = "A markdown parser and compiler for log definitions in mobile applications"
-    spec.description   = spec.summary
+    spec.description = <<~EOF
+    Daifuku is a markdown parser and compiler for log definitions in mobile applications. It provides an
+    automatic generation of document-based type-safe log implementation code from markdown.
+    EOF
     spec.homepage      = "https://github.com/cookpad/daifuku"
     spec.license       = 'MIT'
 
@@ -27,8 +30,8 @@ Gem::Specification.new do |spec|
     spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
     spec.require_paths = ["lib"]
 
-    spec.add_dependency "redcarpet"
-    spec.add_dependency "nokogiri"
+    spec.add_dependency "redcarpet", "~> 3.6"
+    spec.add_dependency "nokogiri", "~> 1.15"
 
     spec.add_development_dependency "bundler", "~> 2.0"
     spec.add_development_dependency "rake", "~> 13.0"

@@ -1,4 +1,7 @@
 # daifuku
+
+⚠️ This repo is now archived and unmaintained. Use at your own risk. ⚠️
+
 A markdown parser and compiler for log definitions in mobile applications
 
 ## Usage 
